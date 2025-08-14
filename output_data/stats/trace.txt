@@ -1,3 +1,0 @@
-task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
-1	fb/95a2fe	2734699	validation (Validating input file format)	COMPLETED	0	2025-06-26 11:00:27.216	1.4s	349ms	1227.5%	13.6 MB	17 MB	6.3 MB	739.9 KB
-2	af/22749d	2735200	compute_metrics (Computing benchmark metrics for submitted data)	FAILED	1	2025-06-26 11:00:28.639	1.5s	1.5s	-	-	-	-	-

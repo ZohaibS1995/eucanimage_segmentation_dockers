@@ -1,3 +1,0 @@
-.command.run: line 284: TZ: unbound variable
-ERROR: No files matching pattern 'seg_*.nii.gz' were found.
-INFO: Extracted files: ['participant_files/brain_IXI002-Guys-0828-T1.nii.gz', 'participant_files/brain_IXI012-HH-1211-T1.nii.gz', 'participant_files/brain_IXI013-HH-1212-T1.nii.gz', 'participant_files/brain_IXI014-HH-1236-T1.nii.gz', 'participant_files/brain_IXI015-HH-1258-T1.nii.gz']

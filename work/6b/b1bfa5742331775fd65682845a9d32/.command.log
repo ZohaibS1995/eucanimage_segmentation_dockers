@@ -1,3 +1,0 @@
-.command.run: line 284: TZ: unbound variable
-INFO: Extracted files: ['participant_files/segmentations/seg_image1.nii.gz']
-ERROR: No files matching pattern 'seg_*.nii.gz' were found.
