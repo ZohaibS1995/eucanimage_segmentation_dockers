@@ -153,7 +153,7 @@ def main(args):
     ### -------------------------------------------------------------------------------------------------------
     # Untar input file (single tar file of multiple nifti files)
     # Directory were the .gz files are going to be extracted
-    untar_dir = os.path.join(os.path.dirname(input_file), 'participant_files')
+    untar_dir = os.path.join(os.path.dirname(input_file), 'files')
     print(f"INFO: Untar dir {untar_dir}.")
 
     # Check if the directory already exists
@@ -185,7 +185,7 @@ def main(args):
 
 def compute_metrics(input_file, goldstandard_dir, challenge, participant_id,
                     community, event, outdir):
-    untar_dir = os.path.join(os.path.dirname(input_file), 'participant_files')
+    untar_dir = os.path.join(os.path.dirname(input_file), 'files')
     gt_path = goldstandard_dir
 
     # Get and sort brain files
