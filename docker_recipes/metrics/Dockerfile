@@ -21,7 +21,7 @@ RUN apt-get update && \
         python3-pip \
         && update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1 \
         && update-alternatives --install /usr/bin/pip3 pip3 /usr/bin/pip3 1 \
-        && rm -rf /var/lib/apt/lists/* \
+        && rm -rf /var/lib/apt/lists/* 
         
  # Set the working directory to /app
 WORKDIR /app
