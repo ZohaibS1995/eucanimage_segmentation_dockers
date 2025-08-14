@@ -188,11 +188,11 @@ def compute_metrics(input_file, goldstandard_dir, challenge, participant_id,
     untar_dir = os.path.join(os.path.dirname(input_file), 'files')
     gt_path = goldstandard_dir
 
-    # Get and sort brain files
-    brain_files = sorted([f for f in os.listdir(untar_dir)
-                          if f.startswith('brain_') and f.endswith('.nii.gz')])
-    brain_files = [os.path.join(untar_dir, f) for f in brain_files]
-    print(f"Sorted brain files: {brain_files}")
+    # Get and sort seg files
+    seg_files = sorted([f for f in os.listdir(untar_dir)
+                          if f.startswith('seg_') and f.endswith('.nii.gz')])
+    seg_files = [os.path.join(untar_dir, f) for f in seg_files]
+    print(f"Sorted seg files: {seg_files}")
 
     gt_files = sorted([f for f in os.listdir(gt_path)
                        if f.startswith('gt_') and f.endswith('.nii.gz')])
@@ -202,8 +202,8 @@ def compute_metrics(input_file, goldstandard_dir, challenge, participant_id,
     gt_files = [os.path.join(gt_path, f) for f in gt_files]
     print(f"Sorted GT files: {gt_files}")
 
-    assert len(brain_files) == len(gt_files), \
-        f"ERROR: Number of submitted segmentation files {len(brain_files)} does not match number of ground truth files {len(gt_files)}!"
+    assert len(seg_files) == len(gt_files), \
+        f"ERROR: Number of submitted segmentation files {len(seg_files)} does not match number of ground truth files {len(gt_files)}!"
 
     # define array that will hold the full set of assessment datasets
     all_assessments = []
@@ -215,7 +215,7 @@ def compute_metrics(input_file, goldstandard_dir, challenge, participant_id,
 
     # Compute comprehensive metrics for label 1 only
     print("Computing comprehensive metrics for label 1...")
-    metrics_summary = compute_comprehensive_metrics(brain_files, gt_files, tolerance_mm=1.0)
+    metrics_summary = compute_comprehensive_metrics(seg_files, gt_files, tolerance_mm=1.0)
 
     print("Computed metrics:")
     for metric, stats in metrics_summary.items():
