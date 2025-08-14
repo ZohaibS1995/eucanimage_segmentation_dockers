@@ -1,0 +1,15 @@
+.command.run: line 284: TZ: unbound variable
+Traceback (most recent call last):
+  File "/app/validation.py", line 150, in <module>
+    main(args)
+  File "/app/validation.py", line 64, in main
+    seg_archive_files = extract_tarfile(cfg.input, untar_dir)
+  File "/app/validation.py", line 47, in extract_tarfile
+    with tarfile.open(tar_path, "r:gz") as tar:
+  File "/usr/local/lib/python3.7/tarfile.py", line 1593, in open
+    return func(name, filemode, fileobj, **kwargs)
+  File "/usr/local/lib/python3.7/tarfile.py", line 1639, in gzopen
+    fileobj = GzipFile(name, mode + "b", compresslevel, fileobj)
+  File "/usr/local/lib/python3.7/gzip.py", line 168, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'brain.nii.tar.gz'

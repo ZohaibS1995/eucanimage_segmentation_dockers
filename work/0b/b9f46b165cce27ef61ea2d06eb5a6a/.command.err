@@ -1,0 +1,13 @@
+.command.run: line 284: TZ: unbound variable
+Traceback (most recent call last):
+  File "/app/compute_metrics.py", line 13, in <module>
+    import torch
+  File "/usr/local/lib/python3.8/dist-packages/torch/__init__.py", line 31, in <module>
+    from ._utils import _import_dotted_name, classproperty
+  File "/usr/local/lib/python3.8/dist-packages/torch/_utils.py", line 949, in <module>
+    class CallbackRegistry(Generic[P]):
+  File "/usr/lib/python3.8/typing.py", line 261, in inner
+    return func(*args, **kwds)
+  File "/usr/lib/python3.8/typing.py", line 890, in __class_getitem__
+    raise TypeError(
+TypeError: Parameters to Generic[...] must all be type variables

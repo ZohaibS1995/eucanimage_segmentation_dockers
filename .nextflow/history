@@ -1,0 +1,8 @@
+2025-06-26 10:17:47	7.4s	distraught_planck	ERR	17f75be415bf9cbdf5a31332e9899327	40820b8c-0713-4490-b068-f224782f85a4	nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1
+2025-06-26 10:19:44	6.5s	intergalactic_engelbart	ERR	17f75be415bf9cbdf5a31332e9899327	b97b8a11-241a-43f5-9134-cbd9320d663b	nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1
+2025-06-26 10:43:39	4.7s	wise_lavoisier	ERR	17f75be415bf9cbdf5a31332e9899327	d5bf9cc0-8d44-47d1-b938-5a0a5af31477	nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1
+2025-06-26 10:53:37	4.2s	magical_williams	ERR	17f75be415bf9cbdf5a31332e9899327	447bbdf7-5e40-4356-b9c1-dbe5fb0c8282	nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1
+2025-06-26 10:53:57	3.7s	deadly_bhabha	ERR	17f75be415bf9cbdf5a31332e9899327	06eb5346-66f7-4b0c-ba02-be47760ad17e	nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1
+2025-06-26 10:56:13	4.3s	mad_morse	ERR	17f75be415bf9cbdf5a31332e9899327	0c0f073e-2cad-4e73-b49f-71db800a836e	nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1
+2025-06-26 10:56:37	3.8s	special_baekeland	ERR	17f75be415bf9cbdf5a31332e9899327	d8b7926c-2406-4cc9-8bfa-201ab53fac90	nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1
+2025-06-26 11:00:25	5.9s	reverent_allen	ERR	17f75be415bf9cbdf5a31332e9899327	212a87f1-12ed-40e1-b79e-a1deaf91186a	nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1

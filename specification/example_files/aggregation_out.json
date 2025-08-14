@@ -1,0 +1,113 @@
+[
+    {
+        "_id": "EuCanImage:Brain_Cancer_Diagnosis_ECI_UC0_Seg_agg:dsc_10.0",
+        "challenges_ids": [
+            "ECI_UC0_Seg"
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [
+                    {
+                        "metric_value": 0.9611519214703701,
+                        "participant_id": "OEB"
+                    }
+                ],
+                "visualization": {
+                    "metric": "dsc_10.0",
+                    "type": "bar-plot"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "EuCanImage:Brain_Cancer_Diagnosis_ECI_UC0_Seg_agg:dsc_8.0",
+        "challenges_ids": [
+            "ECI_UC0_Seg"
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [
+                    {
+                        "metric_value": 0.965798735503897,
+                        "participant_id": "OEB"
+                    }
+                ],
+                "visualization": {
+                    "metric": "dsc_8.0",
+                    "type": "bar-plot"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "EuCanImage:Brain_Cancer_Diagnosis_ECI_UC0_Seg_agg:dsc_3.0",
+        "challenges_ids": [
+            "ECI_UC0_Seg"
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [
+                    {
+                        "metric_value": 0.9574235891978702,
+                        "participant_id": "OEB"
+                    }
+                ],
+                "visualization": {
+                    "metric": "dsc_3.0",
+                    "type": "bar-plot"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "EuCanImage:Brain_Cancer_Diagnosis_ECI_UC0_Seg_agg:dsc_0.0_vs_dsc_2.0",
+        "challenges_ids": [
+            "ECI_UC0_Seg"
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [
+                    {
+                        "metric_x": 0.9987008629761125,
+                        "metric_y": 0.973436831616145,
+                        "participant_id": "OEB"
+                    }
+                ],
+                "visualization": {
+                    "optimization": "top-left",
+                    "type": "2D-plot",
+                    "x_axis": "dsc_0.0",
+                    "y_axis": "dsc_2.0"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "EuCanImage:Brain_Cancer_Diagnosis_ECI_UC0_Seg_agg:dsc_4.0_vs_dsc_5.0",
+        "challenges_ids": [
+            "ECI_UC0_Seg"
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [
+                    {
+                        "metric_x": 0.975828275007982,
+                        "metric_y": 0.9089758520379394,
+                        "participant_id": "OEB"
+                    }
+                ],
+                "visualization": {
+                    "optimization": "bottom-right",
+                    "type": "2D-plot",
+                    "x_axis": "dsc_4.0",
+                    "y_axis": "dsc_5.0"
+                }
+            }
+        },
+        "type": "aggregation"
+    }
+]

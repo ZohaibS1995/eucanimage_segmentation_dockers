@@ -1,0 +1,6 @@
+.command.run: line 284: TZ: unbound variable
+INFO: Extracted files: ['participant_files/seg_image1.nii.gz']
+INFO: Found GT files: ['goldstandard_dir/gt_image1.nii.gz']
+INFO: Loading seg file: participant_files/seg_image1.nii.gz
+INFO: Loading GT  file: goldstandard_dir/gt_image1.nii.gz
+INFO: Validation succeeded. JSON written to validated_result.json

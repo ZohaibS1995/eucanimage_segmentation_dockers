@@ -1,0 +1,2 @@
+.command.run: line 284: TZ: unbound variable
+ERROR: No files matching pattern 'seg_*.nii.gz' were found.

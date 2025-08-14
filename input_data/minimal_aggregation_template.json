@@ -1,0 +1,166 @@
+[
+    {
+        "_id": "ID",
+        "challenges_ids": [
+            
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "bar-plot",
+                    "metric": "dice"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "ID",
+        "challenges_ids": [
+
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "bar-plot",
+                    "metric": "jaccard"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "ID",
+        "challenges_ids": [
+
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "bar-plot",
+                    "metric": "surface_dice"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "ID",
+        "challenges_ids": [
+
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "bar-plot",
+                    "metric": "hausdorff"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "ID",
+        "challenges_ids": [
+
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "bar-plot",
+                    "metric": "hausdorff95"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "ID",
+        "challenges_ids": [
+
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "bar-plot",
+                    "metric": "assd"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "ID",
+        "challenges_ids": [
+
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "bar-plot",
+                    "metric": "nsd"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "ID",
+        "challenges_ids": [
+
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "bar-plot",
+                    "metric": "modified_hausdorff"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "ID",
+        "challenges_ids": [
+
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "2D-plot",
+                    "x_axis": "dice",
+                    "y_axis": "hausdorff95",
+                    "optimization": "top-left"
+                }
+            }
+        },
+        "type": "aggregation"
+    },
+    {
+        "_id": "ID",
+        "challenges_ids": [
+
+        ],
+        "datalink": {
+            "inline_data": {
+                "challenge_participants": [],
+                "visualization": {
+                    "type": "2D-plot",
+                    "x_axis": "surface_dice",
+                    "y_axis": "assd",
+                    "optimization": "bottom-right"
+                }
+            }
+        },
+        "type": "aggregation"
+    }
+]

@@ -1,0 +1,94 @@
+digraph "DAG" {
+v0 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.fromPath"];
+v7 [label="validation"];
+v0 -> v7 [label="input_file"];
+
+v1 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.fromPath"];
+v7 [label="validation"];
+v1 -> v7 [label="goldstandard_dir"];
+
+v2 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.fromPath"];
+v20 [label="benchmark_consolidation"];
+v2 -> v20 [label="template_path"];
+
+v3 [shape=point,label="",fixedsize=true,width=0.1];
+v7 [label="validation"];
+v3 -> v7 [label="challenges_ids"];
+
+v4 [shape=point,label="",fixedsize=true,width=0.1];
+v7 [label="validation"];
+v4 -> v7 [label="participant_id"];
+
+v5 [shape=point,label="",fixedsize=true,width=0.1];
+v7 [label="validation"];
+v5 -> v7 [label="community_id"];
+
+v6 [shape=point,label="",fixedsize=true,width=0.1];
+v7 [label="validation"];
+v6 -> v7 [label="event_id"];
+
+v7 [label="validation"];
+v8 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v7 -> v8;
+
+v7 [label="validation"];
+v14 [label="compute_metrics"];
+v7 -> v14;
+
+v8 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v9 [shape=point];
+v8 -> v9 [label="validations"];
+
+v0 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.fromPath"];
+v14 [label="compute_metrics"];
+v0 -> v14 [label="input_file"];
+
+v10 [shape=point,label="",fixedsize=true,width=0.1];
+v14 [label="compute_metrics"];
+v10 -> v14 [label="challenges_ids"];
+
+v1 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.fromPath"];
+v14 [label="compute_metrics"];
+v1 -> v14 [label="goldstandard_dir"];
+
+v11 [shape=point,label="",fixedsize=true,width=0.1];
+v14 [label="compute_metrics"];
+v11 -> v14 [label="participant_id"];
+
+v12 [shape=point,label="",fixedsize=true,width=0.1];
+v14 [label="compute_metrics"];
+v12 -> v14 [label="community_id"];
+
+v13 [shape=point,label="",fixedsize=true,width=0.1];
+v14 [label="compute_metrics"];
+v13 -> v14 [label="event_id"];
+
+v14 [label="compute_metrics"];
+v15 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v14 -> v15;
+
+v15 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="collect"];
+v20 [label="benchmark_consolidation"];
+v15 -> v20 [label="assessments"];
+
+v16 [shape=point,label="",fixedsize=true,width=0.1];
+v20 [label="benchmark_consolidation"];
+v16 -> v20 [label="event_id"];
+
+v17 [shape=point,label="",fixedsize=true,width=0.1];
+v20 [label="benchmark_consolidation"];
+v17 -> v20 [label="outdir"];
+
+v18 [shape=point,label="",fixedsize=true,width=0.1];
+v20 [label="benchmark_consolidation"];
+v18 -> v20 [label="validation_file"];
+
+v19 [shape=point,label="",fixedsize=true,width=0.1];
+v20 [label="benchmark_consolidation"];
+v19 -> v20 [label="challenges_ids"];
+
+v20 [label="benchmark_consolidation"];
+v21 [shape=point];
+v20 -> v21;
+
+}
