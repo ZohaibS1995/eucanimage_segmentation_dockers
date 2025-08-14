@@ -1,9 +1,10 @@
 attrs==21.2.0
 importlib-metadata==4.2.0
 jsonschema==3.2.0
-numpy==1.20.3
-pandas==1.2.4
-scipy==1.6.2
+numpy==1.22.4
+pandas>=1.4.2,<1.5
+scipy>=1.8.1,<1.11
+segmentationmetrics==1.0.0
 pyrsistent==0.17.3
 python-dateutil==2.8.1
 pytz==2021.1
