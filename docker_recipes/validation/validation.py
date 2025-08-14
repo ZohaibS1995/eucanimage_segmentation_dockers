@@ -48,7 +48,7 @@ def main(cfg):
     # ---------------------------------------------------------------------#
     # 1.  Untar participant submission
     # ---------------------------------------------------------------------#
-    untar_dir = os.path.join(os.path.dirname(cfg.input), "participant_files")
+    untar_dir = os.path.join(os.path.dirname(cfg.input), "files")
     os.makedirs(untar_dir, exist_ok=True)
 
     if not any(os.scandir(untar_dir)):
