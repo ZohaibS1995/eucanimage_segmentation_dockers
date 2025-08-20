@@ -1,0 +1,15 @@
+.command.run: line 284: TZ: unbound variable
+Traceback (most recent call last):
+  File "/app/compute_metrics.py", line 259, in <module>
+    main(args)
+  File "/app/compute_metrics.py", line 163, in main
+    extracted_files = extract_tarfile(input_file, untar_dir)
+  File "/app/compute_metrics.py", line 57, in extract_tarfile
+    with tarfile.open(input_file, 'r:gz') as tar:
+  File "/usr/lib/python3.10/tarfile.py", line 1846, in open
+    return func(name, filemode, fileobj, **kwargs)
+  File "/usr/lib/python3.10/tarfile.py", line 1892, in gzopen
+    fileobj = GzipFile(name, mode + "b", compresslevel, fileobj)
+  File "/usr/lib/python3.10/gzip.py", line 174, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+IsADirectoryError: [Errno 21] Is a directory: 'participant_dir'

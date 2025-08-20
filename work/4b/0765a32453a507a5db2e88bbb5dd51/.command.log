@@ -1,0 +1,56 @@
+.command.run: line 284: TZ: unbound variable
+2025-08-19 22:26:02  INFO:Starting script
+2025-08-19 22:26:02  INFO:Using event: ECI_UC7_Seg
+2025-08-19 22:26:02  INFO:Assessment data: ['assessment_results.json']
+2025-08-19 22:26:02  ERROR:'hausdorff95'
+Traceback (most recent call last):
+  File "/app/aggregation.py", line 333, in add_to_aggregation
+    participant["metric_y"] = challenge[plot["y_axis"]
+KeyError: 'hausdorff95'
+2025-08-19 22:26:02  ERROR:'hausdorff95'
+Traceback (most recent call last):
+  File "/app/aggregation.py", line 333, in add_to_aggregation
+    participant["metric_y"] = challenge[plot["y_axis"]
+KeyError: 'hausdorff95'
+2025-08-19 22:26:02  ERROR:'assd'
+Traceback (most recent call last):
+  File "/app/aggregation.py", line 333, in add_to_aggregation
+    participant["metric_y"] = challenge[plot["y_axis"]
+KeyError: 'assd'
+2025-08-19 22:26:02  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:02  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:02  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+2025-08-19 22:26:03  ERROR:list index out of range
+Traceback (most recent call last):
+  File "/app/aggregation.py", line 366, in <module>
+    main(options)
+  File "/app/aggregation.py", line 169, in main
+    challenge_dir, aggr_object, challenge_id, "RAW")
+  File "/app/assessment_chart/assessment_chart.py", line 335, in print_chart
+    p_frontX, p_frontY = pareto_frontier(x_values, y_values, maxX=max_x, maxY=max_y)
+  File "/app/assessment_chart/assessment_chart.py", line 23, in pareto_frontier
+    p_front = [myList[0]]
+IndexError: list index out of range
+HERE ['assessment_results.json'] output_data
+HERE [{'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'surface_dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:jaccard_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': 0.0}], 'visualization': {'type': 'bar-plot', 'metric': 'jaccard_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'surface_dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff95_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff95_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:modified_hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'modified_hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff95_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff95_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:assd_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'assd_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:nsd_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'nsd_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:modified_hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'modified_hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:dice_label1_vs_hausdorff95', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [], 'visualization': {'type': '2D-plot', 'x_axis': 'dice_label1', 'y_axis': 'hausdorff95', 'optimization': 'top-left'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1_vs_hausdorff95', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [], 'visualization': {'type': '2D-plot', 'x_axis': 'surface_dice_label1', 'y_axis': 'hausdorff95', 'optimization': 'top-left'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1_vs_assd', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [], 'visualization': {'type': '2D-plot', 'x_axis': 'surface_dice_label1', 'y_axis': 'assd', 'optimization': 'bottom-right'}}}, 'type': 'aggregation'}]
+Traceback (most recent call last):
+  File "/app/aggregation.py", line 371, in <module>
+    raise e
+  File "/app/aggregation.py", line 366, in <module>
+    main(options)
+  File "/app/aggregation.py", line 169, in main
+    challenge_dir, aggr_object, challenge_id, "RAW")
+  File "/app/assessment_chart/assessment_chart.py", line 335, in print_chart
+    p_frontX, p_frontY = pareto_frontier(x_values, y_values, maxX=max_x, maxY=max_y)
+  File "/app/assessment_chart/assessment_chart.py", line 23, in pareto_frontier
+    p_front = [myList[0]]
+IndexError: list index out of range

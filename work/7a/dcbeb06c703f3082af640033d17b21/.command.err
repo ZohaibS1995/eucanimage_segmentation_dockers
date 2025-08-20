@@ -1,0 +1,5 @@
+.command.run: line 284: TZ: unbound variable
+/app/compute_metrics.py:136: RuntimeWarning: Mean of empty slice
+  return {k: {"mean": float(np.nanmean(v)), "std": float(np.nanstd(v))}
+/usr/local/lib/python3.10/dist-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,

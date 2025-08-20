@@ -1,0 +1,15 @@
+.command.run: line 284: TZ: unbound variable
+2025-08-20 00:13:31  INFO:Starting script
+2025-08-20 00:13:31  INFO:Using event: ECI_UC7_Seg
+2025-08-20 00:13:31  INFO:Assessment data: ['assessment_results.json']
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:31  WARNING:No handles with labels found to put in legend.
+2025-08-20 00:13:32  INFO:Finished script successfully.

@@ -1,0 +1,13 @@
+.command.run: line 284: TZ: unbound variable
+Traceback (most recent call last):
+  File "/app/compute_metrics.py", line 302, in <module>
+    main(args)
+  File "/app/compute_metrics.py", line 248, in main
+    metrics_summary = compute_segmentation_metrics(paired_pred, paired_gt, tolerance_mm=1.0)
+  File "/app/compute_metrics.py", line 195, in compute_segmentation_metrics
+    mh_val = _modified_hausdorff(pred, gt, sp)
+  File "/app/compute_metrics.py", line 91, in _modified_hausdorff
+    d = cdist(pts_a, pts_b)
+  File "/usr/local/lib/python3.10/dist-packages/scipy/spatial/distance.py", line 2947, in cdist
+    return cdist_fn(XA, XB, out=out, **kwargs)
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 389. GiB for an array with shape (228672, 228613) and data type float64

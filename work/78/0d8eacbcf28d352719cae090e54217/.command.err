@@ -1,0 +1,7 @@
+.command.run: line 284: TZ: unbound variable
+Traceback (most recent call last):
+  File "/app/validation.py", line 141, in <module>
+    main(args)
+  File "/app/validation.py", line 55, in main
+    seg_archive_files = extract_tarfile(os.path.join(cfg.input, "segmentations.tar.gz", untar_dir))
+TypeError: extract_tarfile() missing 1 required positional argument: 'extract_to'

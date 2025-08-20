@@ -1,0 +1,182 @@
+Aug-19 22:25:51.995 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1
+Aug-19 22:25:52.096 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Aug-19 22:25:52.118 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Aug-19 22:25:52.128 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-19 22:25:52.129 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-19 22:25:52.132 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Aug-19 22:25:52.144 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-19 22:25:52.161 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/zohaib/Downloads/Segmentation/nextflow.config
+Aug-19 22:25:52.163 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/zohaib/Downloads/Segmentation/parameters_file.config
+Aug-19 22:25:52.164 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/zohaib/Downloads/Segmentation/nextflow.config
+Aug-19 22:25:52.164 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/zohaib/Downloads/Segmentation/parameters_file.config
+Aug-19 22:25:52.187 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Aug-19 22:25:52.931 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Aug-19 22:25:52.955 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [docker]
+Aug-19 22:25:53.004 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Aug-19 22:25:53.024 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [adoring_davinci] DSL2 - revision: 17f75be415
+Aug-19 22:25:53.025 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-19 22:25:53.025 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-19 22:25:53.036 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Aug-19 22:25:53.039 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@24a86066] - activable => nextflow.secret.LocalSecretsProvider@24a86066
+Aug-19 22:25:53.101 [main] DEBUG nextflow.Session - Session UUID: 6137fe34-1534-4314-96b9-8d973c6bf96c
+Aug-19 22:25:53.101 [main] DEBUG nextflow.Session - Run name: adoring_davinci
+Aug-19 22:25:53.102 [main] DEBUG nextflow.Session - Executor pool size: 48
+Aug-19 22:25:53.110 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-19 22:25:53.115 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=144; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-19 22:25:53.147 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC 
+  System: Linux 5.15.0-141-generic
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 11.0.28+6-post-Ubuntu-1ubuntu122.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 2689890@a0523397601 [127.0.1.1]
+  CPUs: 48 - Mem: 251.7 GB (24.1 GB) - Swap: 8 GB (2.2 GB)
+Aug-19 22:25:53.177 [main] DEBUG nextflow.Session - Work-dir: /home/zohaib/Downloads/Segmentation/work [ext2/ext3]
+Aug-19 22:25:53.178 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/zohaib/Downloads/Segmentation/bin
+Aug-19 22:25:53.189 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-19 22:25:53.201 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-19 22:25:53.244 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-19 22:25:53.255 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 49; maxThreads: 1000
+Aug-19 22:25:53.321 [main] DEBUG nextflow.Session - Session start
+Aug-19 22:25:53.325 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/zohaib/Downloads/Segmentation/output_data/stats/trace.txt
+Aug-19 22:25:54.149 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-19 22:25:54.156 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `help` -- Initialise it to a default value eg. `params.help = some_value`
+Aug-19 22:25:54.165 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `otherdir` -- Initialise it to a default value eg. `params.otherdir = some_value`
+Aug-19 22:25:54.167 [main] INFO  nextflow.Nextflow - 
+  ==============================================
+  BENCHMARKING PIPELINE IN OPENEBENCH
+  ==============================================
+      Input file: /home/zohaib/Downloads/Segmentation/input_data/participant_dir
+      Benchmarking community = EuCanImage
+Challenges ids: ECI_UC0_Seg
+Participant id : tool1
+Gold standard dataset DIR: /home/zohaib/Downloads/Segmentation/input_data/goldstandard_dir
+Validation result JSON file: /home/zohaib/Downloads/Segmentation/output_data/validated_result.json
+         Assessment results JSON files: /home/zohaib/Downloads/Segmentation/output_data/assessment_results.json
+Consolidation result JSON file: /home/zohaib/Downloads/Segmentation/output_data/consolidated_result.json
+      Benchmark datasets DIR: /home/zohaib/Downloads/Segmentation/output_data
+      Nextflow statistics DIR: /home/zohaib/Downloads/Segmentation/output_data/stats
+         Benchmarking event: ECI_UC7_Seg
+   Minimal aggregation data template JSON file: /home/zohaib/Downloads/Segmentation/input_data/minimal_aggregation_template.json
+// Public reference data DIR: /home/zohaib/Downloads/Segmentation/input_data/public_ref_dir
+      // Community-specific results DIR: null
+
+
+Aug-19 22:25:54.302 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:validation` matches process validation
+Aug-19 22:25:54.311 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-19 22:25:54.311 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-19 22:25:54.318 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-19 22:25:54.323 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=48; memory=251.7 GB; capacity=48; pollInterval=100ms; dumpInterval=5m
+Aug-19 22:25:54.325 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-19 22:25:54.449 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:compute_metrics` matches process compute_metrics
+Aug-19 22:25:54.451 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-19 22:25:54.451 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-19 22:25:54.463 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:benchmark_consolidation` matches process benchmark_consolidation
+Aug-19 22:25:54.465 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-19 22:25:54.465 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-19 22:25:54.473 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: compute_metrics, benchmark_consolidation, validation
+Aug-19 22:25:54.474 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+Aug-19 22:25:54.482 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > validation
+Aug-19 22:25:54.483 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > compute_metrics
+Aug-19 22:25:54.484 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > benchmark_consolidation
+Aug-19 22:25:54.485 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_1f5a3ce86072ad02: /home/zohaib/Downloads/Segmentation/main.nf
+Aug-19 22:25:54.485 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-19 22:25:54.485 [main] DEBUG nextflow.Session - Session await
+Aug-19 22:25:54.676 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-19 22:25:54.680 [Task submitter] INFO  nextflow.Session - [5e/3f1149] Submitted process > validation (Validating input file format)
+Aug-19 22:25:56.002 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: validation (Validating input file format); status: COMPLETED; exit: 0; error: -; workDir: /home/zohaib/Downloads/Segmentation/work/5e/3f114921cfc9c90665f168cd6d74cb]
+Aug-19 22:25:56.023 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=144; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-19 22:25:56.068 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-19 22:25:56.070 [Task submitter] INFO  nextflow.Session - [7a/dcbeb0] Submitted process > compute_metrics (Computing benchmark metrics for submitted data)
+Aug-19 22:26:01.222 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: compute_metrics (Computing benchmark metrics for submitted data); status: COMPLETED; exit: 0; error: -; workDir: /home/zohaib/Downloads/Segmentation/work/7a/dcbeb06c703f3082af640033d17b21]
+Aug-19 22:26:01.243 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-19 22:26:01.244 [Task submitter] INFO  nextflow.Session - [4b/0765a3] Submitted process > benchmark_consolidation (Performing benchmark assessment and building plots)
+Aug-19 22:26:04.045 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: benchmark_consolidation (Performing benchmark assessment and building plots); status: COMPLETED; exit: 1; error: -; workDir: /home/zohaib/Downloads/Segmentation/work/4b/0765a32453a507a5db2e88bbb5dd51]
+Aug-19 22:26:04.052 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=benchmark_consolidation (Performing benchmark assessment and building plots); work-dir=/home/zohaib/Downloads/Segmentation/work/4b/0765a32453a507a5db2e88bbb5dd51
+  error [nextflow.exception.ProcessFailedException]: Process `benchmark_consolidation (Performing benchmark assessment and building plots)` terminated with an error exit status (1)
+Aug-19 22:26:04.075 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'benchmark_consolidation (Performing benchmark assessment and building plots)'
+
+Caused by:
+  Process `benchmark_consolidation (Performing benchmark assessment and building plots)` terminated with an error exit status (1)
+
+Command executed:
+
+  python /app/aggregation.py -a assessment_results.json -e ECI_UC7_Seg -o output_data -t minimal_aggregation_template.json
+  python /app/merge_data_model_files.py -m assessment_results.json -v validated_result.json -c ECI_UC0_Seg -a output_data -o "consolidated_result.json"
+
+Command exit status:
+  1
+
+Command output:
+  HERE ['assessment_results.json'] output_data
+  HERE [{'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'surface_dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:jaccard_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': 0.0}], 'visualization': {'type': 'bar-plot', 'metric': 'jaccard_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'surface_dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff95_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff95_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:modified_hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'modified_hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff95_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff95_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:assd_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'assd_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:nsd_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'nsd_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:modified_hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'modified_hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:dice_label1_vs_hausdorff95', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [], 'visualization': {'type': '2D-plot', 'x_axis': 'dice_label1', 'y_axis': 'hausdorff95', 'optimization': 'top-left'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1_vs_hausdorff95', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [], 'visualization': {'type': '2D-plot', 'x_axis': 'surface_dice_label1', 'y_axis': 'hausdorff95', 'optimization': 'top-left'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1_vs_assd', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [], 'visualization': {'type': '2D-plot', 'x_axis': 'surface_dice_label1', 'y_axis': 'assd', 'optimization': 'bottom-right'}}}, 'type': 'aggregation'}]
+
+Command error:
+    File "/app/aggregation.py", line 333, in add_to_aggregation
+      participant["metric_y"] = challenge[plot["y_axis"]
+  KeyError: 'hausdorff95'
+  2025-08-19 22:26:02  ERROR:'assd'
+  Traceback (most recent call last):
+    File "/app/aggregation.py", line 333, in add_to_aggregation
+      participant["metric_y"] = challenge[plot["y_axis"]
+  KeyError: 'assd'
+  2025-08-19 22:26:02  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:02  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:02  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  WARNING:No handles with labels found to put in legend.
+  2025-08-19 22:26:03  ERROR:list index out of range
+  Traceback (most recent call last):
+    File "/app/aggregation.py", line 366, in <module>
+      main(options)
+    File "/app/aggregation.py", line 169, in main
+      challenge_dir, aggr_object, challenge_id, "RAW")
+    File "/app/assessment_chart/assessment_chart.py", line 335, in print_chart
+      p_frontX, p_frontY = pareto_frontier(x_values, y_values, maxX=max_x, maxY=max_y)
+    File "/app/assessment_chart/assessment_chart.py", line 23, in pareto_frontier
+      p_front = [myList[0]]
+  IndexError: list index out of range
+  HERE ['assessment_results.json'] output_data
+  HERE [{'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'surface_dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:jaccard_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': 0.0}], 'visualization': {'type': 'bar-plot', 'metric': 'jaccard_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'surface_dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff95_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff95_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:modified_hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'modified_hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff95_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff95_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:assd_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'assd_label1'}}}, 'type': 'aggregation'}, es, maxX=max_x, maxY=max_y)
+    File "/app/assessment_chart/assessment_chart.py", line 23, in pareto_frontier
+      p_front = [myList[0]]
+  IndexError: list index out of range
+  HERE ['assessment_results.json'] output_data
+  HERE [{'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'surface_dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:jaccard_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': 0.0}], 'visualization': {'type': 'bar-plot', 'metric': 'jaccard_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'surface_dice_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff95_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff95_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:modified_hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'modified_hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:hausdorff95_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'hausdorff95_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:assd_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'assd_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:nsd_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'nsd_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:modified_hausdorff_label1', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [{'participant_id': 'tool1', 'metric_value': nan}], 'visualization': {'type': 'bar-plot', 'metric': 'modified_hausdorff_label1'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:dice_label1_vs_hausdorff95', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [], 'visualization': {'type': '2D-plot', 'x_axis': 'dice_label1', 'y_axis': 'hausdorff95', 'optimization': 'top-left'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1_vs_hausdorff95', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [], 'visualization': {'type': '2D-plot', 'x_axis': 'surface_dice_label1', 'y_axis': 'hausdorff95', 'optimization': 'top-left'}}}, 'type': 'aggregation'}, {'_id': 'EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_agg:surface_dice_label1_vs_assd', 'challenges_ids': ['ECI_UC0_Seg'], 'datalink': {'inline_data': {'challenge_participants': [], 'visualization': {'type': '2D-plot', 'x_axis': 'surface_dice_label1', 'y_axis': 'assd', 'optimization': 'bottom-right'}}}, 'type': 'aggregation'}]
+  Traceback (most recent call last):
+    File "/app/aggregation.py", line 371, in <module>
+      raise e
+    File "/app/aggregation.py", line 366, in <module>
+      main(options)
+    File "/app/aggregation.py", line 169, in main
+      challenge_dir, aggr_object, challenge_id, "RAW")
+    File "/app/assessment_chart/assessment_chart.py", line 335, in print_chart
+      p_frontX, p_frontY = pareto_frontier(x_values, y_values, maxX=max_x, maxY=max_y)
+    File "/app/assessment_chart/assessment_chart.py", line 23, in pareto_frontier
+      p_front = [myList[0]]
+  IndexError: list index out of range
+
+Work dir:
+  /home/zohaib/Downloads/Segmentation/work/4b/0765a32453a507a5db2e88bbb5dd51
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Aug-19 22:26:04.082 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-19 22:26:04.088 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `benchmark_consolidation (Performing benchmark assessment and building plots)` terminated with an error exit status (1)
+Aug-19 22:26:04.111 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-19 22:26:04.114 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-19 22:26:04.118 [main] INFO  nextflow.script.BaseScript - Oops .. something went wrong
+Aug-19 22:26:04.123 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=4.6s; failedDuration=2.7s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Aug-19 22:26:04.123 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Aug-19 22:26:04.126 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Aug-19 22:26:04.716 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Aug-19 22:26:04.789 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-19 22:26:04.801 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

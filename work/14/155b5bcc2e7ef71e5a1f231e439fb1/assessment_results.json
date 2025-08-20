@@ -1,0 +1,98 @@
+[
+    {
+        "_id": "EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_tool1:dice",
+        "challenge_id": "ECI_UC0_Seg",
+        "community_id": "EuCanImage",
+        "metrics": {
+            "metric_id": "dice",
+            "stderr": 0.0,
+            "value": 0.0
+        },
+        "participant_id": "tool1",
+        "type": "assessment"
+    },
+    {
+        "_id": "EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_tool1:jaccard",
+        "challenge_id": "ECI_UC0_Seg",
+        "community_id": "EuCanImage",
+        "metrics": {
+            "metric_id": "jaccard",
+            "stderr": 0.0,
+            "value": 0.0
+        },
+        "participant_id": "tool1",
+        "type": "assessment"
+    },
+    {
+        "_id": "EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_tool1:surface_dice",
+        "challenge_id": "ECI_UC0_Seg",
+        "community_id": "EuCanImage",
+        "metrics": {
+            "metric_id": "surface_dice",
+            "stderr": 0.0,
+            "value": 0.0
+        },
+        "participant_id": "tool1",
+        "type": "assessment"
+    },
+    {
+        "_id": "EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_tool1:nsd",
+        "challenge_id": "ECI_UC0_Seg",
+        "community_id": "EuCanImage",
+        "metrics": {
+            "metric_id": "nsd",
+            "stderr": 0.0,
+            "value": 0.0
+        },
+        "participant_id": "tool1",
+        "type": "assessment"
+    },
+    {
+        "_id": "EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_tool1:hausdorff",
+        "challenge_id": "ECI_UC0_Seg",
+        "community_id": "EuCanImage",
+        "metrics": {
+            "metric_id": "hausdorff",
+            "stderr": 0.0,
+            "value": 0.0
+        },
+        "participant_id": "tool1",
+        "type": "assessment"
+    },
+    {
+        "_id": "EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_tool1:hausdorff95",
+        "challenge_id": "ECI_UC0_Seg",
+        "community_id": "EuCanImage",
+        "metrics": {
+            "metric_id": "hausdorff95",
+            "stderr": 0.0,
+            "value": 0.0
+        },
+        "participant_id": "tool1",
+        "type": "assessment"
+    },
+    {
+        "_id": "EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_tool1:assd",
+        "challenge_id": "ECI_UC0_Seg",
+        "community_id": "EuCanImage",
+        "metrics": {
+            "metric_id": "assd",
+            "stderr": 0.0,
+            "value": 0.0
+        },
+        "participant_id": "tool1",
+        "type": "assessment"
+    },
+    {
+        "_id": "EuCanImage:ECI_UC7_Seg_ECI_UC0_Seg_tool1:modified_hausdorff",
+        "challenge_id": "ECI_UC0_Seg",
+        "community_id": "EuCanImage",
+        "metrics": {
+            "metric_id": "modified_hausdorff",
+            "stderr": 0.0,
+            "value": 0.0
+        },
+        "participant_id": "tool1",
+        "type": "assessment"
+    }
+]

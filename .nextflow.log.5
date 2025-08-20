@@ -1,0 +1,132 @@
+Aug-19 23:25:40.326 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker -c parameters_file.config --participant_id tool1
+Aug-19 23:25:40.429 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Aug-19 23:25:40.451 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Aug-19 23:25:40.462 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-19 23:25:40.464 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-19 23:25:40.467 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Aug-19 23:25:40.478 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-19 23:25:40.494 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/zohaib/Downloads/Segmentation/nextflow.config
+Aug-19 23:25:40.497 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/zohaib/Downloads/Segmentation/parameters_file.config
+Aug-19 23:25:40.497 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/zohaib/Downloads/Segmentation/nextflow.config
+Aug-19 23:25:40.497 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/zohaib/Downloads/Segmentation/parameters_file.config
+Aug-19 23:25:40.523 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Aug-19 23:25:41.242 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Aug-19 23:25:41.264 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [docker]
+Aug-19 23:25:41.308 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Aug-19 23:25:41.328 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [lonely_brahmagupta] DSL2 - revision: 17f75be415
+Aug-19 23:25:41.328 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-19 23:25:41.328 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-19 23:25:41.339 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Aug-19 23:25:41.342 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6e6d4780] - activable => nextflow.secret.LocalSecretsProvider@6e6d4780
+Aug-19 23:25:41.401 [main] DEBUG nextflow.Session - Session UUID: 807495fa-c87f-40b9-bc33-f384b5a1bea0
+Aug-19 23:25:41.401 [main] DEBUG nextflow.Session - Run name: lonely_brahmagupta
+Aug-19 23:25:41.401 [main] DEBUG nextflow.Session - Executor pool size: 48
+Aug-19 23:25:41.409 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-19 23:25:41.413 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=144; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-19 23:25:41.443 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC 
+  System: Linux 5.15.0-141-generic
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 11.0.28+6-post-Ubuntu-1ubuntu122.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 2715416@a0523397601 [127.0.1.1]
+  CPUs: 48 - Mem: 251.7 GB (23.3 GB) - Swap: 8 GB (2.2 GB)
+Aug-19 23:25:41.469 [main] DEBUG nextflow.Session - Work-dir: /home/zohaib/Downloads/Segmentation/work [ext2/ext3]
+Aug-19 23:25:41.470 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/zohaib/Downloads/Segmentation/bin
+Aug-19 23:25:41.481 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-19 23:25:41.491 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-19 23:25:41.531 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-19 23:25:41.542 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 49; maxThreads: 1000
+Aug-19 23:25:41.613 [main] DEBUG nextflow.Session - Session start
+Aug-19 23:25:41.621 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /home/zohaib/Downloads/Segmentation/output_data/stats/trace.txt
+Aug-19 23:25:42.250 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-19 23:25:42.257 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `help` -- Initialise it to a default value eg. `params.help = some_value`
+Aug-19 23:25:42.267 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `otherdir` -- Initialise it to a default value eg. `params.otherdir = some_value`
+Aug-19 23:25:42.269 [main] INFO  nextflow.Nextflow - 
+  ==============================================
+  BENCHMARKING PIPELINE IN OPENEBENCH
+  ==============================================
+      Input file: /home/zohaib/Downloads/Segmentation/input_data/participant_dir
+      Benchmarking community = EuCanImage
+Challenges ids: ECI_UC0_Seg
+Participant id : tool1
+Gold standard dataset DIR: /home/zohaib/Downloads/Segmentation/input_data/goldstandard_dir
+Validation result JSON file: /home/zohaib/Downloads/Segmentation/output_data/validated_result.json
+         Assessment results JSON files: /home/zohaib/Downloads/Segmentation/output_data/assessment_results.json
+Consolidation result JSON file: /home/zohaib/Downloads/Segmentation/output_data/consolidated_result.json
+      Benchmark datasets DIR: /home/zohaib/Downloads/Segmentation/output_data
+      Nextflow statistics DIR: /home/zohaib/Downloads/Segmentation/output_data/stats
+         Benchmarking event: ECI_UC7_Seg
+   Minimal aggregation data template JSON file: /home/zohaib/Downloads/Segmentation/input_data/minimal_aggregation_template.json
+// Public reference data DIR: /home/zohaib/Downloads/Segmentation/input_data/public_ref_dir
+      // Community-specific results DIR: null
+
+
+Aug-19 23:25:42.433 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:validation` matches process validation
+Aug-19 23:25:42.444 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-19 23:25:42.444 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-19 23:25:42.453 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-19 23:25:42.460 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=48; memory=251.7 GB; capacity=48; pollInterval=100ms; dumpInterval=5m
+Aug-19 23:25:42.464 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-19 23:25:42.617 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:compute_metrics` matches process compute_metrics
+Aug-19 23:25:42.619 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-19 23:25:42.619 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-19 23:25:42.633 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:benchmark_consolidation` matches process benchmark_consolidation
+Aug-19 23:25:42.636 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-19 23:25:42.636 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-19 23:25:42.652 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: compute_metrics, benchmark_consolidation, validation
+Aug-19 23:25:42.655 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+Aug-19 23:25:42.663 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > validation
+Aug-19 23:25:42.665 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > compute_metrics
+Aug-19 23:25:42.665 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > benchmark_consolidation
+Aug-19 23:25:42.668 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_1f5a3ce86072ad02: /home/zohaib/Downloads/Segmentation/main.nf
+Aug-19 23:25:42.671 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-19 23:25:42.672 [main] DEBUG nextflow.Session - Session await
+Aug-19 23:25:42.913 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-19 23:25:42.922 [Task submitter] INFO  nextflow.Session - [e8/55432b] Submitted process > validation (Validating input file format)
+Aug-19 23:25:44.364 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: validation (Validating input file format); status: COMPLETED; exit: 0; error: -; workDir: /home/zohaib/Downloads/Segmentation/work/e8/55432b3dd541b23fa3594d43ee8104]
+Aug-19 23:25:44.392 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=144; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-19 23:25:44.425 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-19 23:25:44.427 [Task submitter] INFO  nextflow.Session - [9a/1dca1d] Submitted process > compute_metrics (Computing benchmark metrics for submitted data)
+Aug-19 23:25:45.318 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: compute_metrics (Computing benchmark metrics for submitted data); status: COMPLETED; exit: 1; error: -; workDir: /home/zohaib/Downloads/Segmentation/work/9a/1dca1d984c2fe9f067e2e36ab5b159]
+Aug-19 23:25:45.323 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=compute_metrics (Computing benchmark metrics for submitted data); work-dir=/home/zohaib/Downloads/Segmentation/work/9a/1dca1d984c2fe9f067e2e36ab5b159
+  error [nextflow.exception.ProcessFailedException]: Process `compute_metrics (Computing benchmark metrics for submitted data)` terminated with an error exit status (1)
+Aug-19 23:25:45.336 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'compute_metrics (Computing benchmark metrics for submitted data)'
+
+Caused by:
+  Process `compute_metrics (Computing benchmark metrics for submitted data)` terminated with an error exit status (1)
+
+Command executed:
+
+  python3 /app/compute_metrics.py -i participant_dir -c ECI_UC0_Seg -e ECI_UC7_Seg -g goldstandard_dir -p tool1 -com EuCanImage -o "assessment_results.json"
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  .command.run: line 284: TZ: unbound variable
+    File "/app/compute_metrics.py", line 207
+      gt_by_id = {p.stem.replace("gt_","").replace(".nii","": p) for p in gt_all}
+                                                            ^
+  SyntaxError: invalid syntax
+
+Work dir:
+  /home/zohaib/Downloads/Segmentation/work/9a/1dca1d984c2fe9f067e2e36ab5b159
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Aug-19 23:25:45.342 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-19 23:25:45.343 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `compute_metrics (Computing benchmark metrics for submitted data)` terminated with an error exit status (1)
+Aug-19 23:25:45.365 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-19 23:25:45.367 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-19 23:25:45.373 [main] INFO  nextflow.script.BaseScript - Oops .. something went wrong
+Aug-19 23:25:45.378 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=354ms; failedDuration=857ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Aug-19 23:25:45.378 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Aug-19 23:25:45.380 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Aug-19 23:25:45.979 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Aug-19 23:25:46.051 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-19 23:25:46.064 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

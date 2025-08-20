@@ -48,11 +48,11 @@ def main(cfg):
     # ---------------------------------------------------------------------#
     # 1.  Untar participant submission
     # ---------------------------------------------------------------------#
-    untar_dir = os.path.join(os.path.dirname(cfg.input), "files")
+    untar_dir = os.path.join(cfg.input, "files")
     os.makedirs(untar_dir, exist_ok=True)
 
     if not any(os.scandir(untar_dir)):
-        seg_archive_files = extract_tarfile(cfg.input, untar_dir)
+        seg_archive_files = extract_tarfile(os.path.join(cfg.input, "segmentations.tar.gz"), untar_dir)
     else:
         print(f"INFO: Directory {untar_dir} already exists, skipping extraction.")
         seg_archive_files = [os.path.join(untar_dir, f) for f in os.listdir(untar_dir)]

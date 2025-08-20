@@ -1,0 +1,5 @@
+.command.run: line 284: TZ: unbound variable
+  File "/app/compute_metrics.py", line 207
+    gt_by_id = {p.stem.replace("gt_","").replace(".nii","": p) for p in gt_all}
+                                                          ^
+SyntaxError: invalid syntax

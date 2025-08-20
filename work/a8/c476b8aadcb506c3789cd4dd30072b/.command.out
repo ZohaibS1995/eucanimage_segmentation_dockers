@@ -1,0 +1,6 @@
+INFO: Directory participant_dir/files already exists, skipping extraction.
+INFO: Extracted files: ['participant_dir/files/seg_image1.nii.gz']
+INFO: Found GT files: ['goldstandard_dir/gt_image1.nii.gz']
+INFO: Loading seg file: participant_dir/files/seg_image1.nii.gz
+INFO: Loading GT  file: goldstandard_dir/gt_image1.nii.gz
+INFO: Validation succeeded. JSON written to validated_result.json

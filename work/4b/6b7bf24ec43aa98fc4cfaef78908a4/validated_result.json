@@ -1,0 +1,16 @@
+{
+    "_id": "EuCanImage:ECI_UC7_Seg_tool1",
+    "challenge_id": [
+        "ECI_UC0_Seg"
+    ],
+    "community_id": "EuCanImage",
+    "datalink": {
+        "attrs": [
+            "archive"
+        ],
+        "status": "ok",
+        "validation_date": "2025-08-19T23:46:29+00:00"
+    },
+    "participant_id": "tool1",
+    "type": "participant"
+}

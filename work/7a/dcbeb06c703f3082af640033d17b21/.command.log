@@ -1,0 +1,28 @@
+.command.run: line 284: TZ: unbound variable
+/app/compute_metrics.py:136: RuntimeWarning: Mean of empty slice
+  return {k: {"mean": float(np.nanmean(v)), "std": float(np.nanstd(v))}
+/usr/local/lib/python3.10/dist-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+INFO: participant input file participant_dir/segmentations.tar.gz
+INFO: Selected challenge(s) ['ECI_UC0_Seg']
+INFO: Untar dir participant_dir/files.
+INFO: Directory participant_dir/files already exists.
+INFO: Extracting files to participant_dir/files. Extracted files: ['participant_dir/files/seg_image1.nii.gz']
+OS error: [Errno 2] No such file or directory: ''
+Could not create output path: assessment_results.json
+Sorted seg files: ['participant_dir/files/seg_image1.nii.gz']
+INFO: Found GT files: ['gt_image1.nii.gz']
+Sorted GT files: ['goldstandard_dir/gt_image1.nii.gz']
+Computing comprehensive metrics for label 1...
+Processing: seg_image1.nii.gz vs gt_image1.nii.gz
+Warning: Empty masks detected for seg_image1.nii.gz, skipping surface metrics
+Computed metrics:
+  dice: mean=nan, std=nan
+  jaccard: mean=0.0000, std=0.0000
+  surface_dice: mean=nan, std=nan
+  hausdorff: mean=nan, std=nan
+  hausdorff95: mean=nan, std=nan
+  assd: mean=nan, std=nan
+  nsd: mean=nan, std=nan
+  modified_hausdorff: mean=nan, std=nan
+Assessment results written to: assessment_results.json
